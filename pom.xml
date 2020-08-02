@@ -11,100 +11,14 @@
     <relativePath />
   </parent>
 
-  <groupId>jp.ac.keio.bio.fun</groupId>
-  <artifactId>Xito_SBML</artifactId>
-  <version>1.2.0</version>
-
-  <name>XitoSBML</name>
-  <description>A plugin to create SBML model from microscopic images</description>
-  <url>http://github.com/spatialsimulator/XitoSBML</url>
-  <inceptionYear>2017</inceptionYear>
-  <organization>
-    <name>Funahashi Lab.</name>
-    <url>http://fun.bio.keio.ac.jp/</url>
-  </organization>
-  <licenses>
-    <license>
-      <name>Apache License, Version 2.0</name>
-      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
-
-  <developers>
-    <developer>
-      <id>funasoul</id>
-      <name>Akira Funahashi</name>
-      <url>https://fun.bio.keio.ac.jp/~funa/</url>
-      <roles>
-        <role>lead</role>
-        <role>developer</role>
-        <role>debugger</role>
-        <role>reviewer</role>
-        <role>support</role>
-        <role>maintainer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id>kaitoii11</id>
-      <name>Kaito Ii</name>
-      <url>http://github.com/kaitoii11</url>
-      <roles>
-        <role>lead</role>
-        <role>developer</role>
-        <role>debugger</role>
-        <role>reviewer</role>
-        <role>support</role>
-        <role>maintainer</role>
-      </roles>
-    </developer>
-  </developers>
-  <contributors>
-    <contributor>
-      <name>Kota Mashimo</name>
-      <url>https://github.com/KotaMashimo</url>
-      <properties>
-        <id>KotaMashimo</id>
-      </properties>
-    </contributor>
-    <contributor>
-      <name>Mitsunori Ozeki</name>
-      <url>https://github.com/MittsuMan</url>
-      <properties>
-        <id>MittsuMan</id>
-      </properties>
-    </contributor>
-    <contributor>
-      <name>Noriko Hiroi</name>
-      <url>https://fun.bio.keio.ac.jp/~hiroi/</url>
-    </contributor>
-  </contributors>
-  <mailingLists>
-    <mailingList>
-      <name>XitoSBML Issues</name>
-      <archive>https://github.com/spatialsimulator/XitoSBML/issues</archive>
-    </mailingList>
-  </mailingLists>
-
-  <scm>
-    <connection>scm:git:git://github.com/spatialsimulator/XitoSBML</connection>
-    <developerConnection>scm:git:git@github.com:spatialsimulator/XitoSBML</developerConnection>
-    <tag>HEAD</tag>
-    <url>https://github.com/spatialsimulator/XitoSBML</url>
-  </scm>
-  <issueManagement>
-    <system>GitHub Issues</system>
-    <url>https://github.com/spatialsimulator/XitoSBML/issues</url>
-  </issueManagement>
-  <ciManagement>
-    <system>None</system>
-  </ciManagement>
+  <groupId>org.parseImage</groupId>
+  <artifactId>Image parser</artifactId>
+  <version>1.0-SNAPSHOT</version>
 
   <properties>
-    <package-name>jp.ac.keio.bio.fun.xitosbml</package-name>
-    <license.licenseName>Apache License, Version 2.0</license.licenseName>
-    <license.copyrightOwners>Funahashi Lab.</license.copyrightOwners>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
     <jsbml.version>1.3.1</jsbml.version>
   </properties>
 
@@ -181,6 +95,11 @@
   </repositories>
 
   <dependencies>
+    <dependency>
+      <groupId>info.picocli</groupId>
+      <artifactId>picocli</artifactId>
+      <version>4.5.0</version>
+    </dependency>
     <dependency>
       <groupId>net.imagej</groupId>
       <artifactId>ij</artifactId><!--$NO-MVN-MAN-VER$-->
