@@ -12,8 +12,11 @@
   </parent>
 
   <groupId>org.parseImage</groupId>
-  <artifactId>Image parser</artifactId>
+  <artifactId>ImageParser</artifactId>
   <version>1.0-SNAPSHOT</version>
+  
+  <name>parseImage</name>
+  <url>https://github.com/Medha-B/parseImage</url>
 
   <properties>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
